@@ -1,81 +1,135 @@
-Task 5: Train-Test Split & Evaluation Metrics
+# Task 5: Train-Test Split & Evaluation Metrics
 
-Introduction
+## 📌 Project Overview
 
-The purpose of this task is to understand the concept of Train-Test Split and evaluate the performance of a Machine Learning model using various evaluation metrics. The Heart Disease Dataset was used to train and test a Logistic Regression model.
+This project demonstrates the implementation of **Train-Test Split** and the evaluation of a **Logistic Regression** model using the **Heart Disease Dataset**. The objective is to understand how machine learning models are trained, tested, and evaluated using standard classification metrics.
 
-Tools Used
+---
 
-- Python
-- Scikit-Learn
+## 🛠️ Technologies Used
 
-Dataset
+* Python
+* Scikit-Learn
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
 
-Heart Disease Dataset
+## 📂 Dataset
 
-Objectives
+**Heart Disease Dataset (`heart.csv`)**
 
-1. Split the dataset into training and testing sets.
-2. Understand the purpose of training and testing data.
-3. Train a Logistic Regression model.
-4. Predict outcomes on test data.
-5. Calculate Accuracy, Precision, and Recall.
-6. Understand and explain the Confusion Matrix.
-7. Interpret the model results.
+The dataset contains medical attributes used to predict whether a patient is likely to have heart disease.
 
-Train-Test Split
+## 🎯 Objectives
 
-The dataset was divided into two parts:
+* Split the dataset into training and testing sets.
+* Understand the importance of Train-Test Split in Machine Learning.
+* Train a Logistic Regression model.
+* Generate predictions on unseen test data.
+* Evaluate model performance using:
 
-- Training Data (80%)
-- Testing Data (20%)
+  * Accuracy
+  * Precision
+  * Recall
+  * Confusion Matrix
+* Interpret the model's prediction results.
 
-Training data was used to train the model, while testing data was used to evaluate its performance on unseen data.
+## 🔄 Train-Test Split
 
-Model Training
+The dataset was divided into:
 
-A Logistic Regression model was trained using the training dataset. After training, the model learned patterns from the data and was used for prediction.
+* **Training Set:** 80%
+* **Testing Set:** 20%
 
-Prediction
+The training set was used to train the model, while the testing set was used to evaluate its performance on unseen data.
 
-The trained model was applied to the testing dataset to generate predictions.
+## 🤖 Model Training
 
-Evaluation Metrics
+A **Logistic Regression** classifier was trained using the training dataset. The model learned patterns and relationships from the data to predict the presence of heart disease.
 
-Accuracy
+---
 
-Accuracy measures the proportion of correctly predicted observations to the total observations.
+## 🔍 Prediction
 
-Precision
+After training, the model was used to make predictions on the testing dataset. These predictions were then compared with the actual values to evaluate model performance.
 
-Precision measures how many predicted positive cases are actually positive.
+---
 
-Recall
+## 📊 Evaluation Metrics
 
-Recall measures how many actual positive cases are correctly identified by the model.
+### Accuracy
 
-Confusion Matrix
+Accuracy measures the proportion of correctly classified instances among all observations.
 
-A Confusion Matrix is used to evaluate the performance of a classification model by comparing actual values with predicted values.
+**Formula:**
+
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+---
+
+### Precision
+
+Precision indicates how many of the predicted positive cases are actually positive.
+
+**Formula:**
+
+Precision = TP / (TP + FP)
+
+---
+
+### Recall
+
+Recall measures how many actual positive cases were correctly identified by the model.
+
+**Formula:**
+
+Recall = TP / (TP + FN)
+
+---
+
+## 📈 Confusion Matrix
+
+A Confusion Matrix provides a detailed breakdown of classification results.
 
 It consists of:
 
-- True Positive (TP)
-- True Negative (TN)
-- False Positive (FP)
-- False Negative (FN)
+* **True Positive (TP):** Correctly predicted positive cases
+* **True Negative (TN):** Correctly predicted negative cases
+* **False Positive (FP):** Incorrectly predicted positive cases
+* **False Negative (FN):** Incorrectly predicted negative cases
 
-Results
+The confusion matrix helps in understanding the strengths and weaknesses of the classification model.
 
-The Logistic Regression model was successfully trained and tested on the Heart Disease Dataset. The evaluation metrics were calculated to assess the model's performance and prediction capability.
+---
 
-Files Included
+## ✅ Results
 
-- task5.py
-- heart.csv
-- output.png
-- README.md
+The Logistic Regression model was successfully trained and evaluated on the Heart Disease Dataset. Performance metrics such as Accuracy, Precision, Recall, and the Confusion Matrix were used to assess the model's effectiveness in predicting heart disease.
 
-Conclusion
+---
 
-This task provided practical understanding of Train-Test Split, Logistic Regression, Accuracy, Precision, Recall, and Confusion Matrix. It also demonstrated how model evaluation helps in measuring the effectiveness of a Machine Learning model.
+## 📁 Project Structure
+
+```text
+Task-5/
+│
+├── task5.py          # Model implementation
+├── heart.csv         # Dataset
+├── output.png        # Output/Result visualization
+└── README.md         # Project documentation
+```
+
+---
+
+## 🏁 Conclusion
+
+This project provided hands-on experience with:
+
+* Train-Test Split methodology
+* Logistic Regression for classification
+* Model prediction techniques
+* Evaluation metrics such as Accuracy, Precision, and Recall
+* Interpretation of the Confusion Matrix
+
+These concepts are fundamental for building and evaluating Machine Learning classification models effectively.
